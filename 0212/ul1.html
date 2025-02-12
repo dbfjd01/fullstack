@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단메뉴53p</title>
+</head>
+<style>
+    /*
+        >로 자식에게만 css 적용한다
+        >없이 작성하면 하위 대상들 전부 적용됨
+    */
+
+    *{margin: 0; padding: 0;}
+    .one > li{
+        /*
+            float: left;
+        */
+        border: 1px solid #333;
+    }
+    ul{
+        list-style: none;
+    }
+</style>
+<body>
+    <ul class="one">
+        <li><a href="#">메뉴1</a>
+           <ul>
+                <li><a href="#">메뉴1_1</a></li>
+                <li><a href="#">메뉴1_2</a></li>
+                <li><a href="#">메뉴1_3</a></li>
+           </ul> 
+        </li>
+        <li><a href="#">메뉴2</a>
+            <ul>
+                <li><a href="#">메뉴2_1</a></li>
+                <li><a href="#">메뉴2_2</a></li>
+                <li><a href="#">메뉴2_3</a></li>
+           </ul> 
+        </li>
+        <li><a href="#">메뉴3</a>
+            <ul>
+                <li><a href="#">메뉴3_1</a></li>
+                <li><a href="#">메뉴3_2</a></li>
+                <li><a href="#">메뉴3_3</a></li>
+           </ul> 
+        </li>
+    </ul>
+</body>
+</html>

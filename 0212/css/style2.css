@@ -1,0 +1,41 @@
+h1{
+    background-color: red;
+}
+p{
+    color: blue;
+}
+.gr{
+    color: green;
+}
+#pink1{
+    background-color: pink;
+}
+/* id는 유일성이 보장되어야 한다 */
+
+.btxt{
+    color: red;
+}
+
+.ctxt{
+    color: blueviolet;
+}
+
+.atxt{
+    font-weight: bold;
+}
+
+#b1{
+    background-color: brown;
+}
+
+.a1{
+    background-color: aqua !important;
+}
+
+/*
+    선택자 우선순위
+    1. !important
+    2. id
+    3. class
+    4. 일반 선택자
+*/
