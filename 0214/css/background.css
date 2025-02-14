@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0;}
+.back{
+    width: 100%;
+    height: 100vh;
+}
+.back1{
+    background-color: aqua;
+    background-image: url(../images/b1.jpg);
+    /*background-image: url(../images/dog1.jpg);
+    background-repeat: no-repeat;
+    배경이미지 기본 상태는 반복해서 채우는것 그래서 no repeat함
+    x,y축으로 반복할지 정할수 있음
+    */
+    /* background-size: cover;
+    이미지를 화면에 강제로 맞추기 */
+}
+.back2{
+    background-color: rgb(62, 52, 250);
+    background-image: url(../images/b2.jpg);
+}
+.back3{
+    background-color: rgb(255, 48, 182);
+    background-image: url(../images/b3.jpg);
+    background-attachment: fixed;
+    /* 사진이 배경에서 고정되고 주변 이미지들은 정상적으로 이동됨 */
+}
+.back4{
+    background-color: rgb(18, 255, 62);
+    background-image: url(../images/b4.jpg);
+}
+.back5{
+    background-color: rgb(18, 255, 62);
+    background-image: url(../images/b5.jpg);
+}
+.back6{
+    background-image: url(../images/dog1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    /* 좌우 50% 중앙으로 상하 30퍼로 살짝뜨게 할수 있다 정중앙은 50 50*/
+    background-color: antiquewhite;
+}
+.back7{
+    background: cadetblue url(../images/dog1.jpg) no-repeat 50% 50%;
+    /* 한번에 적을수 있지만 순서를 잘 확인해야한다 */
+}

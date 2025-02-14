@@ -1,0 +1,109 @@
+*{
+    margin: 0;padding: 0;
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    height: 400px;
+    background-image: url(../coffe_images/top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h2{
+    float: right;
+    display: block;
+    font-size: 50px;
+    color: #fff;
+    margin-right: 50px;
+    margin-top: 280px;
+}
+
+#container nav{
+    height: 100px;
+    background-color: sienna;
+}
+
+#container nav ul li{
+    float: left;
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#container nav ul li a{
+    display: block;
+    width: 180px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+#container nav ul li:hover a{
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+}
+
+.main{
+    height: 550px;
+}
+
+section{
+    width: 800px;
+    height: 550px;
+    background-color: grey;
+    float: left;
+}
+
+section h2{
+    text-align: center;
+    padding: 10px;
+}
+
+section article{
+    width: 360px;
+    height: 200px;
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+    margin-left:25px;
+    margin-top: 10px;
+}
+
+section article h3{
+    background-image: url(../coffe_images/kong.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+section article p{
+    text-align: justify;
+}
+
+aside{
+    width: 400px;
+    height: 550px;
+    background-color: rgba(219, 78, 22, 0.712);
+    float: left;
+    text-align: center;
+}
+
+footer p{
+    height: 100px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(46, 41, 41);
+}

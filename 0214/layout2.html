@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+    .wrap{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    header{
+        width: 1200px;
+        height: 200px;
+        background-color: chocolate;
+    }
+    .main{
+        width: 1200px;
+        height: 500px;
+    }
+    section{
+        width: 900px;
+        height: 500px;
+        background-color: tan;
+        float: left;
+    }
+    aside{
+        width: 300px;
+        height: 500px;
+        background-color: yellowgreen;
+        float: left;
+    }
+    footer{
+        /* clear: both; */
+        /* 줄바꿈 처리할때 사용 
+        float:lefr float:right 둘다 사용됨 처리
+        단점은 물리적으로 내린거라 height 이상의 값을 넣어야 margin 효과가 보임
+        */
+
+        margin-top: 50px;
+        width: 1200px;
+        height: 70px;
+        background-color: #ccc;
+    }
+</style>
+<body>
+    <div class="wrap">
+        <header>헤더</header>
+        <div class="main">
+            <section>세션</section>
+            <aside>사이드</aside>
+        </div>
+        <footer>푸터</footer>
+    </div>
+</body>
+</html>
