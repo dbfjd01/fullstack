@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .font1{
+        font-family: "궁서";
+        font-size: 36px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 2.0;
+    }
+
+    .font2{
+        font: bold italic 36px/2.0 "궁서";
+        /* 순서는 글씨체와 크기는 뒤에 서체나 굵기는 앞에 */
+    }
+
+    .font3{
+        text-indent: 20px;
+        /* 들여쓰기 , -로 내어 쓰기로 x축 이동이 가능 */
+    }
+
+    .font4{
+        letter-spacing: 10px;
+        /* 자간을 조정 */
+    }
+
+    .font5{
+        font-size: 50px;
+        font-weight: bold;
+        text-shadow: 10px 10px 5px red;
+        /* x y축 블러(흐려짐) 색상을 말함 */
+    }
+
+    .img1{
+        box-shadow: 10px 10px 10px #333;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+        box-shadow: 10px 10px 10px #333;
+    }
+</style>
+<body>
+    <p>폰트연습 2번째</p>
+    <p class="font1">폰트연습 2번째</p>
+    <p class="font2">폰트연습 2번째</p>
+    <p class="font3">폰트연습 2번째</p>
+    <p class="font4">폰트연습 2번째</p>
+    <p class="font5">폰트연습 2번째</p>
+    <img src="/0214/images/slide1.jpg" alt="" width="500" class="img1">
+    <div class="box"></div>
+</body>
+</html>
