@@ -1,0 +1,111 @@
+*{
+    margin: 0; padding: 0;
+}
+
+.img_slider img{
+    float: left;
+}
+
+header nav{
+    float: right;
+    width: 600px;
+    background-color: yellow;
+    height: 50px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li ul{
+    background-color: yellow;
+    display: none;
+}
+
+header nav ul li:hover ul{
+    position: absolute;
+    display: block;
+}
+
+header > nav > ul > li{
+    float: left;
+}
+
+header nav ul li a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+header{
+    height: 100px;
+    background-color: aqua;
+}
+
+.img_slider{
+    height: 300px;
+    background-color: tan;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    height: 200px;
+    background-color: cadetblue;
+}
+
+section article{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+section .notice{
+    background-color: #ccc;
+}
+
+section .banner{
+    background-color: #aaa;
+}
+
+section .icons{
+    background-color: #888;
+}
+
+footer{
+    background-color: blueviolet;
+    height: 100px;
+}
+
+footer .foot_logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: hotpink;
+}
+
+.foot_right{
+    width: 1000px;
+    height: 100px;
+    float: left;
+    background-color: pink;
+}
+
+.foot_right .foot_menu{
+    width: 1000px;
+    height: 50px;
+    background-color: #555;
+}
+
+.foot_right .foot_copy{
+    width: 1000px;
+    height: 50px;
+    background-color: #777;
+}
