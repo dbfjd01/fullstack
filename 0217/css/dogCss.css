@@ -41,15 +41,10 @@ nav ul li{
 nav ul li ul{
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
     background-color: #ccc;
-    width: 100%;
 }
 
 nav ul li ul li{
-    top: 100%;
-    left: 0;
     background-color: #ccc;
 }
 
@@ -68,7 +63,7 @@ nav ul li:hover > ul{
     display: block;
 }
 
-nav ul li:hover > a{
+nav ul li:hover{
     background-color: #f46075;
     font-weight: bold;
     color: #fff;
