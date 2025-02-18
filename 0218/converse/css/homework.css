@@ -51,3 +51,15 @@
     padding-left: 40px;
     margin-top: 40px;
 }
+
+.section1 .left ul li:first-child{
+    border-left: none;
+}
+
+.section1 .right ul li:nth-child(3){
+    border-right: none;
+}
+
+.section1 .right ul li:last-child{
+    border-right: none;
+}
