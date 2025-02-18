@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head{
+        width: 800px;
+        height: 800px;
+        border: 3px solid black;
+        margin: 0 auto;
+    }
+    .face{
+        width: 800px;
+        height: 800px;
+        border: 1px solid black;
+        border-radius: 400px;
+        background-color:cornflowerblue;
+        margin: 0 auto;
+        position: relative;
+    }
+    .eye1{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        top: 300px;
+        left: 250px;
+        border-radius: 20px;
+    }
+    .eye2{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        top: 300px;
+        right: 250px;
+        border-radius: 20px;
+    }
+    .nose{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background-color: black;
+        top: 400px;
+        right: 350px;
+        border-radius: 45px;
+        z-index: 1;
+    }
+    .mouse1{
+        position: absolute;
+        width: 180px;
+        height: 150px;
+        left: 250px;
+        bottom: 220px;
+        border: 1px solid black;
+        border-radius: 90px 90px 90px 90px;
+        transform: rotate(-40deg);
+        background-color: #fff;
+    }
+    .mouse2{
+        position: absolute;
+        width: 180px;
+        height: 150px;
+        right: 250px;
+        bottom: 220px;
+        border: 1px solid black;
+        border-radius: 90px 90px 90px 90px;
+        transform: rotate(40deg);
+        background-color: #fff;
+    }
+    .line{
+        position: absolute;
+        width: 160px;
+        height: 3px;
+        background-color: #333;
+    }
+    .l_line1{
+        position: absolute;
+        bottom: 180px;
+        left: 180px;
+        transform: rotate(-40deg);
+    }
+    .l_line2{
+        position: absolute;
+        bottom: 280px;
+        left: 160px;
+        transform: rotate(0deg);
+    }
+    .l_line3{
+        position: absolute;
+        bottom: 380px;
+        left: 180px;
+        transform: rotate(40deg);
+    }
+    .r_line1{
+        position: absolute;
+        bottom: 180px;
+        right: 180px;
+        transform: rotate(40deg);
+    }
+    .r_line2{
+        position: absolute;
+        bottom: 280px;
+        right: 160px;
+        transform: rotate(0deg);
+    }
+    .r_line3{
+        position: absolute;
+        bottom: 380px;
+        right: 180px;
+        transform: rotate(-40deg);
+    }
+</style>
+<body>
+    <div class="head">
+        <div class="face">
+            <div class="eye1"></div>
+            <div class="eye2"></div>
+            <div class="nose"></div>
+            <div class="mouse1"></div>
+            <div class="mouse2"></div>
+            <div class="line l_line1"></div>
+            <div class="line l_line2"></div>
+            <div class="line l_line3"></div>
+            <div class="line r_line1"></div>
+            <div class="line r_line2"></div>
+            <div class="line r_line3"></div>
+        </div>
+    </div>
+</body>
+</html>

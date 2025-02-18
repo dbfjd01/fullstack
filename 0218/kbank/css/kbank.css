@@ -1,0 +1,113 @@
+*{
+    margin: 0; padding: 0;
+}
+
+.section1{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border: 1px solid #333;
+}
+
+.section1 .bigbox{
+    list-style: none;
+    /* li가 float되면 부모 ul의 높이가 없어지는 현상때문에 overflow:hidden을 사용 */
+}
+
+.section1 .bigbox li{
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-right: 50px;
+}
+
+.section1 .bigbox li:last-child{
+    margin-right: 0;
+}
+
+.section1 .bigbox li div p span{
+    display: inline-block;
+    /* 
+    inline-block은 줄바뀜 없이 넓이 높이 부여하려고 사용
+    내부의 h3의 margin을 잘 안먹게 되어서 사용
+    */
+    padding: 7px;
+    background-color: cadetblue;
+    color: #fff;
+}
+
+.section1 .bigbox li div h3{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.section1 .bigbox li div .txt3{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.section1 .bigbox li:hover{
+    box-shadow: 10px 10px 10px #999;
+}
+
+/* .section2{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border: 1px solid #333;
+}
+
+.f_content a{
+    text-decoration: none;
+    color: #000;
+} 
+
+.fand .f_content .f_list{
+    list-style: none;
+    float: right;
+}
+
+.fand .f_content .f_list li{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+.section2{
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border: 1px solid #000000;
+}
+.section2 .left{
+    float: left;
+    width: 200px;
+    height: 150px;
+    padding: 30px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+.section2 .right{
+    float: right;
+    width: 800px;
+    height: 150px;
+}
+.section2 .right ul{
+    list-style: none;
+}
+.section2 .right ul li{
+    float: left;
+    text-align: center;
+    width: 100px;
+    height: 110px;
+}
+.section2 .right ul li a{
+    color: #000;
+    text-decoration: none;
+}

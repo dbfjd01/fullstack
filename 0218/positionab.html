@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+    .box1{
+        background-color: aqua;
+    }
+    .box2{
+        background-color: beige;
+    }
+    .box3{
+        /*
+            기준위치가 부모
+            left , top, right, bottom으로 부모 영역 내에서 어디든 이동 가능
+            자리값이 없다(겹쳐진다)
+            box3가 이동하면 box4가 box3있던자리로 이동된다
+        */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: red;
+    }
+    .box4{
+        background-color: goldenrod;
+    }
+</style>
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+</body>
+</html>

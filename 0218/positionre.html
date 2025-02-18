@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+    .box1{
+        background-color: aqua;
+    }
+    .box2{
+        background-color: beige;
+    }
+    .box3{
+        position: relative;
+        /*
+        margin이 꼬일수 있기에 사용에 주의
+        relative는 top 과 left 위치로 조정가능하며
+        원래 있던 위치에서 이동이 되어 겹치기가 발생할수 있음
+        자리값을 가지고있다
+        absolte의 부모역할을 한다
+        겹쳐질때 다른 object를 밀어내지 않는다
+        추후에 만들어진 relative에서 우선 순위가 밀린다
+        */
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+        /* relative에서 우선순위를 정해주는 요소 클수록 제일 앞으로 온다 */
+        background-color: red;
+    }
+    .box4{
+        position: relative;
+        background-color: goldenrod;
+    }
+</style>
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+</body>
+</html>
