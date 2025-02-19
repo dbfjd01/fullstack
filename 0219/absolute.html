@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 3000px;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+    .box1{
+        background-color: aqua;
+    }
+    .box2{
+        background-color: beige;
+    }
+    .box3{
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        background-color: red;
+        /* 부모의 위치에서 이동하며
+        자리값이 없어서 이동하는 위치의 값에 영향을 미침
+        자유로운 위치값 가능
+        */
+    }
+    .box4{
+        background-color: goldenrod;
+    }
+</style>
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+</body>
+</html>
