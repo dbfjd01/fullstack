@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .grad{
+        background-color: blue;
+        background: radial-gradient(white, yellow, red);
+        /* 1번이 가장 중앙 2번은 중간 3번은 마지막으로 타원형을 그려가며 색상을 입힘
+        */
+    }
+    .grad1{
+        background-color: blue;
+        background: radial-gradient(circle,white, yellow, red);
+        /* 
+            circle을 넣으면 타원형에서 원형으로 색상을 입힌다
+        */
+    }
+</style>
+<body>
+    <div class="grad"></div>
+    <div class="grad1"></div>
+</body>
+</html>

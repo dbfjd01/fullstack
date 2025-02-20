@@ -1,0 +1,43 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #333;}
+section{
+    width: 700px;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 100px auto 0;
+    /* position: relative;
+        section을 기준으로 relavtive줘서 하면 고정된 위치에 값들이 나옴
+    */
+}
+.gnb li a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ccc;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.gnb > li >a{
+    /* gnb의 메인메뉴를 담고있는 a */
+    background-color: #915959;
+    color: #fff;
+}
+
+.gnb > li {
+    position: relative;
+    /* section에 기준을 줄땐 이걸 포지션 풀어야한다 */
+}
+
+.gnb li ul{
+    position: absolute;
+    left: 150px;
+    top: 0;
+    display: none;
+}
+
+.gnb li:hover ul{
+    display: block;
+}
