@@ -1,0 +1,173 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color:#000}
+
+body{overflow-x:hidden;
+	width:100%; max-width:1920px;
+	min-width:1000px;
+	height:3000px;
+}
+
+.wraper{
+    width: 100%;
+}
+
+.header_out{
+    width: 100%;
+    height: 110px;
+    position: relative;
+    background: url(../imgs/header_line.png) repeat-x 50% 100%;
+    z-index: 10;
+}
+
+header{
+    width: 1000px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+header .header_line {
+    width: 100%;
+    height: 110px;
+}
+
+.header_line .logo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .gnb{
+	position: absolute;
+	top:111px;
+	left:0;
+	width:100%;
+	height:50px;
+	background-color: #fff;
+}
+.gnb > ul{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	z-index:10; 
+}
+.gnb > ul > li{
+	float:left;
+}
+.gnb > ul > li > a{
+    display: block;
+	width:200px;
+    height:50px;
+    line-height: 50px;
+	text-align: center;
+}
+
+.gnb ul li ul li{
+	width:200px;
+    text-align: center;
+}
+
+.gnb ul ul a{
+	display: inline-block;
+	line-height: 20px;
+	padding: 14px 10px;
+}
+
+/* .gnb ul li ul li:hover a{
+    background-color: aqua;
+}
+하위 메뉴에 이미자 있어야 하는데 없어서 색넣음 */
+
+.gnb ul li ul{
+	position: absolute;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s;
+}
+
+.gnb ul:hover li ul{
+	height:350px;
+}
+
+.shadow{
+	position: absolute;
+	top:50px;
+	left:0;
+	width:100%;
+	height:0px;
+	border-top:1px solid #ddd;
+	box-sizing: border-box;
+	transition:all 0.3s;
+}
+.gnb ul:hover + .shadow{
+	height:350px;
+	background: #fff url(../imgs/header_line.png) repeat-x 50% 0;
+}
+
+.slider{
+    width: 100%;
+    height: 840px;
+    position: relative;
+    text-align: center;
+}
+
+.slide1 {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin-top: 60px;
+    border: 1px solid #000;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    background: url(../imgs/main_txt_box.png) no-repeat 50% 50% / cover;
+}
+
+.slide1 h2{
+    font-size:45px;
+	padding:20px 0;
+	transition:all 1s;
+}
+
+.slide1 p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	transition:all 1s 1s;
+}
+
+/* @keyframes fake_slider{
+    0%{width: 0; height: 0;}
+    100%{width: 100%; height: 100%; visibility:visible;}
+}
+
+@keyframes fake_slider2{
+    0%{width: 100%; height: 100%;}
+    100%{width: 0; height: 0; visibility:hidden;}
+}
+
+.slide2 {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin-top: 60px;
+    border: 1px solid #000;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    background: url(../imgs/main_txt_box.png) no-repeat 50% 50% / cover;
+}
+
+.slide2 h2{
+    font-size:45px;
+	padding:20px 0;
+	transition:all 1s;
+}
+
+.slide2 p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	transition:all 1s 1s;
+} */
