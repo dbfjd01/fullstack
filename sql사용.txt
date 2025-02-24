@@ -1,0 +1,5 @@
+postgresql, oracle 짧게
+
+주는 mysql
+
+PuTTY 사용법 배울수도 있음
