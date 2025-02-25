@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("html 점수입력"));
+        let b = Number(prompt("css 점수입력"));
+        let c = Number(prompt("javascript 점수입력"));
+        let avg = (a+b+c)/3;
+        let result;
+
+        if(avg >= 60){
+            if(a < 40){
+                document.write('html '+a+"점, "+b+"점, "+c+"점으로 "+"불합격");
+            }else if(b < 40){
+                document.write(a+"점, css"+b+"점, "+c+"점으로 "+"불합격");
+            }else if(c < 40){
+                document.write(a+"점, "+b+"점, javascript"+c+"점으로 "+"불합격");
+            } else{
+                document.write("합격");
+            }
+        } else{
+            document.write(a+"점, "+b+"점, "+c+"점으로 "+"불합격");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("계산할 값 입력",""));
+        let b = Number(prompt("계산할 값 입력",""));
+        let c = prompt("계산방식 입력","");
+        let result;
+
+        switch (c) {
+            case "+":
+                result = a+b;
+                break;
+            case "-":
+                result = a-b;
+                break;
+            case "*":
+                result = a*b;
+                break;
+            case "/":
+                result = a/b;
+                break;
+            case "%":
+                result = a%b;
+                break;
+        
+            default:
+                document.write("재입력");
+        }
+
+        document.write(result);
+    </script>
+</body>
+</html>

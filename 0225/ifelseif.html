@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = Number(prompt("나이를 입력",""));
+        let result;
+        if(age < 13 || age >= 65){
+            result = '2000원';
+        } else if(age >= 13 && age < 20){
+            result = '4000원';
+        } else {
+            result = '6000원';
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

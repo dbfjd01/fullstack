@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{margin: 0; padding: 0;}
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+
+    .box1{
+        background-color: aqua;
+    }
+    .box1 p{
+        /* margin-top: 20px; */
+        /* 마진이 박스 위로 적용됨
+        이것도 마진중첩
+        부모와 자식이 둘다 블럭요소
+        자식에게 준 마진이 부모에게 흡수됨*/
+    }
+    .box2{
+        background-color: plum;
+        margin-bottom: 50px;
+    }
+    .box3{
+        background-color: yellowgreen;
+        margin-top: 50px;
+        /* 마진 중첩 현상이 벌어짐 */
+    }
+    .box4{
+        background-color: paleturquoise;
+    }
+</style>
+
+<body>
+    <div class="box box1"><p>박스1</p></div>
+    <div class="box box2"><p>박스2</p></div>
+    <div class="box box3"><p>박스3</p></div>
+    <div class="box box4"><p>박스4</p></div>
+</body>
+</html>
