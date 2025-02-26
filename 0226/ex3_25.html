@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function(){
+            life();
+        })();
+        //즉시 실행함수로 함수 호출
+
+        function life(){
+            document.write("실행1");
+        }
+
+        var instant = (function(){
+            document.write("실행2");
+        })();
+        //즉시 실행함수로 글자 실행 주 용도는 최초로 실행할 함수
+    </script>
+</body>
+</html>

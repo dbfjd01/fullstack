@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "전역";
+        function printName(){
+            var name = "지역";//전역과 지역이 같은 변수일시 지역 내 변수로 처리
+            console.log(name);
+        }
+        printName();
+        console.log(name);
+    </script>
+</body>
+</html>

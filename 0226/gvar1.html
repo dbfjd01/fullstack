@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var globalMessage = "전역";
+        //전역변수
+
+        function showMessage(){
+            var localMessage = "지역변수";
+            console.log(globalMessage);//함수 내부에서도 접근 가능
+            console.log(localMessage);
+        }
+        
+        showMessage();
+        console.log(globalMessage);
+        // console.log(localMessage); 지역변수라서 에러발생함
+    </script>
+</body>
+</html>
