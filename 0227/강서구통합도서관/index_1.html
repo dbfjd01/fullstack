@@ -1,77 +1,87 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항 및 행사</title>
-    <style>
-        * { padding: 0; margin: 0; box-sizing: border-box; }
-        ul { list-style: none; }
-        a { text-decoration: none; color: #000; }
-        .front_board { width: 500px; margin: 0 auto; }
-        .tab-container {
-            display: flex;
-            border-bottom: 2px solid black;
-        }
-        .tab {
-            padding: 10px 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .active-tab {
-            color: #345cae;
-            border-bottom: 2px solid #345cae;
-        }
-        .simpleboard { display: none; }
-        .active-content { display: block; }
-        .flex { display: flex; align-items: center; }
-        .front_board ul {
-            border: none;
-            padding: 10px 0;
-        }
-        .front_board ul li {
-            padding: 8px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .front_board ul li i {
-            flex-shrink: 0;
-            display: inline-block;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        .lin_1 { color: #345cae; border-color: #345cae; }
-        .lin_2 { color: #ff643b; border-color: #ff643b; }
-        .lin_3 { color: #88b04b; border-color: #88b04b; }
-        .lin_4 { color: #687ef8; border-color: #687ef8; }
-        .front_board ul li a {
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
-        }
-        .front_board ul li a p {
-            flex: 1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin: 0;
-        }
-        .front_board ul li:last-child {
-            border-bottom: none;
-        }
-    </style>
+    <title>Document</title>
 </head>
+<style>
+    *{padding: 0; margin: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #000;}
+    .front_board{
+        margin: 0 auto;
+    }
+
+    .front_board ul{
+        width: 480px;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    .front_board ul li i{
+        width: 72px;
+        height: 26px;
+        line-height: 26px;
+        padding: 3px 16px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .front_board ul li p{
+        text-align: left;
+        width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .front_board ul li i{
+        margin-right: 10px;
+    }
+
+    .lin_1{
+        color: #345cae;
+        border: 1px solid #345cae;
+    }
+
+    .lin_2{
+        color: #ff643b;
+        border: 1px solid #ff643b;
+    }
+
+    .lin_3{
+        color: #88b04b;
+        border: 1px solid #88b04b;
+    }
+
+    .lin_4{
+        color: #687ef8;
+        border: 1px solid #687ef8;
+    }
+
+    .tab-container{
+        display: flex;
+    }
+
+    .tab-container .tab{
+        padding: 5px;
+    }
+</style>
 <body>
     <div class="front_board">
         <div class="tab-container">
-            <div id="menutab1" class="tab active-tab" onclick="changeTab('tab1')">공지사항</div>
-            <div id="menutab2" class="tab" onclick="changeTab('tab2')">독서·문화·행사</div>
+            <!-- onclick="changeTab('tab1')" -->
+            <div id="menutab1" class="tab active-tab">공지사항</div>
+            <div id="menutab2" class="tab">독서·문화·행사</div>
+            <div id="menutab2" class="more">더보기<img src="img/더보기버튼.png" alt=""></div>
         </div>
-        <ul id="tab1" class="simpleboard active-content">
+        <ul class="simpleboard tab1 active-content">
             <li>
                 <a href="#" class="flex">
                 <i class="lin_1">통합</i><p>[푸른들] 3월 따로 또 같이</p>
@@ -123,7 +133,7 @@
                 </a>
             </li>
         </ul>
-        <ul id="tab2" class="simpleboard">
+        <ul class="simpleboard tab2">
             <li>
                 <a href="#" class="flex">
                 <i class="lin_3">길꽃</i><p>[길꽃][서울문화의 밤] 도서관의 밤 우리가족 책놀이</p>
@@ -175,41 +185,28 @@
                 </a>
             </li>
         </ul>
-        <button onclick="changePage(-1)">〈</button>
-        <button onclick="changePage(1)">〉</button>
     </div>
     <script>
-        function changeTab(tabId) {
-            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active-tab'));
-            document.querySelectorAll('.simpleboard').forEach(board => board.classList.remove('active-content'));
-            document.getElementById("menu" + tabId).classList.add('active-tab');
-            document.getElementById(tabId).classList.add('active-content');
+        function changeTab(tabId){
+            const allTabs = document.querySelectorAll('.tab');
+            const allContent = document.querySelectorAll('.tab-content');
+
+            allTabs.forEach(function(a){
+                a.classList.remove('active-tab');
+            });
+            
+            allContent.forEach(function(a){
+                a.classList.remove('active-content');
+            });
+
+            const selectedTab = document.getElementById("menu"+tabId);
+            selectedTab.classList.add('active-tab');
+            
+            const selectedContent = document.getElementById(tabId);
+            selectedContent.classList.add('active-content');
+            //id나 class로 선택되면 선택한것에 classList로 추가 제거도 가능하며
+            //class 짤때 의미를 가진 class로 짜는게 중요
         }
-        let currentPage = { tab1: 0, tab2: 0 };
-        const itemsPerPage = 5;
-        function showPage(tabId, page) {
-        let items = document.querySelectorAll(`#${tabId} li`);
-        let totalPages = Math.ceil(items.length / itemsPerPage);
-        if (page < 0) page = totalPages - 1;
-        if (page >= totalPages) page = 0;
-
-        currentPage[tabId] = page;
-
-        items.forEach((item, index) => {
-            item.style.display = (index >= page * itemsPerPage && index < (page + 1) * itemsPerPage) ? "flex" : "none";
-        });
-        }
-
-        function changePage(direction) {
-            let activeTab = document.querySelector('.active-content').id;
-            showPage(activeTab, currentPage[activeTab] + direction);
-        }
-
-        // 초기화 (첫 페이지만 표시)
-        document.addEventListener("DOMContentLoaded", () => {
-            showPage("tab1", 0);
-            showPage("tab2", 0);
-        });
     </script>
 </body>
 </html>
