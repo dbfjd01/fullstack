@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{padding: 0; margin: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #000;}
+    .front_board{
+        margin: 0 auto;
+    }
+
+    .front_board ul{
+        width: 480px;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    .front_board ul li i{
+        width: 72px;
+        height: 26px;
+        line-height: 26px;
+        padding: 3px 16px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .front_board ul li p{
+        text-align: left;
+        width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .front_board ul li i{
+        margin-right: 10px;
+    }
+
+    .lin_1{
+        color: #345cae;
+        border: 1px solid #345cae;
+    }
+
+    .lin_2{
+        color: #ff643b;
+        border: 1px solid #ff643b;
+    }
+
+    .lin_3{
+        color: #88b04b;
+        border: 1px solid #88b04b;
+    }
+
+    .lin_4{
+        color: #687ef8;
+        border: 1px solid #687ef8;
+    }
+
+    .tab-container{
+        display: flex;
+    }
+
+    .tab-container .tab{
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="front_board">
+        <div class="tab-container">
+            <!-- onclick="changeTab('tab1')" -->
+            <div id="menutab1" class="tab active-tab">공지사항</div>
+            <div id="menutab2" class="tab">독서·문화·행사</div>
+            <div id="menutab2" class="more">더보기<img src="img/더보기버튼.png" alt=""></div>
+        </div>
+        <ul class="simpleboard tab1 active-content">
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_1">통합</i><p>[푸른들] 3월 따로 또 같이</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_1">통합</i><p>[길꽃][서울문화의 밤]도서관의 밤 우리가족 책놀이</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_1">통합</i><p>[푸른들] 2025년 2분기 정규 프로그램 참여자 모집 안내</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_1">통합</i><p>[가양]2025 2분기 정규프로그램 모집안내</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_1">통합</i><p>[곰달래]개관 12주년 기념행사 안내</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_1">통합</i><p>독서모임 '야간비행' 7기 모집</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                    <i class="lin_1">통합</i><p>[등빛] 2025년 2분기 정규문화프로그램 수강생 모집 안내</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                    <i class="lin_1">통합</i><p>[길꽃] 2025년 길꽃어린이도서관 '북크북크  서포터즈 1기' 대학생 모집</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                    <i class="lin_1">통합</i><p>[해뜰] 자신감 UP 표현력 UP 그림책큐브 만들기</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_1">통합</i><p>[등빛] 너, 나 그리고 우리가 만드는 환경 이야기(3월)</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="simpleboard tab2">
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_3">길꽃</i><p>[길꽃][서울문화의 밤] 도서관의 밤 우리가족 책놀이</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_4">강서영어</i><p>TRPG로 고전 읽기 -80일간의 세계일주-</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_2">등빛</i><p>[2025년 2분기 정규문화] 세계 역사 속 그 날</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_2">등빛</i><p>[2025년 2분기 정규문화] 문해력UP 사고력 UP: 읽기의 깊이, 생각의 높이</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_2">등빛</i><p>[2025년 2분기 정규문화] 독서랑 논술이랑</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_3">길꽃</i><p>[2025년 2분기 정규문화] 펜 끝으로 만나는 드로잉</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_4">강서영어</i><p>[2025년 2분기 정규문화] 책과 함께하는 과학 탐험대!(기본)</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_2">등빛</i><p>[2025년 2분기 정규문화] 보태니컬 아트</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_2">등빛</i><p>[2025년 2분기 정규문화] 뚝딱! 내가 만드는 그림책 스토리텔링</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex">
+                <i class="lin_2">등빛</i><p>토요스토리극장 3/8</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function changeTab(tabId){
+            const allTabs = document.querySelectorAll('.tab');
+            const allContent = document.querySelectorAll('.tab-content');
+
+            allTabs.forEach(function(a){
+                a.classList.remove('active-tab');
+            });
+            
+            allContent.forEach(function(a){
+                a.classList.remove('active-content');
+            });
+
+            const selectedTab = document.getElementById("menu"+tabId);
+            selectedTab.classList.add('active-tab');
+            
+            const selectedContent = document.getElementById(tabId);
+            selectedContent.classList.add('active-content');
+            //id나 class로 선택되면 선택한것에 classList로 추가 제거도 가능하며
+            //class 짤때 의미를 가진 class로 짜는게 중요
+        }
+    </script>
+</body>
+</html>

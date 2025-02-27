@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        function test(){
+            var x = 10;
+            console.log(x);
+            if(true){
+                var y = 20;
+                console.log(y)//y가 찍힘
+            }
+            console.log(y)//let으로 선언시 y가 안찍힘
+        }
+        test();
+        // console.log(a) 잘나옴
+        // console.log(x) 함수내 선언이라 접근이 안됨
+        // console.log(y) 함수내 선언이라 접근이 안됨
+    </script>
+</body>
+</html>
