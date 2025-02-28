@@ -1,0 +1,39 @@
+a:link, a:visited {
+    color:black;
+    text-decoration: none;
+    }
+    ul {
+        list-style: none;
+        width:500px;
+        margin:10px auto 0;
+        padding:0;
+    }
+    li {
+        /* float: left; 부모의 높이가 필수 */
+        /* display:inline-block; 메뉴끼리 붙지 않고 띄워지는 단점이 있다 */
+        /* display: flex; 도 나쁘지않음*/
+        display:inline-block;
+        width:120px;
+        border:1px solid #ccc;
+        padding:10px 15px;   
+        font-size:16px;
+        text-align:center;
+    }
+
+    li.on{
+        background-color: yellowgreen;
+        font-weight: bold;
+    }
+
+    #result {
+        width:500px;
+        height:300px;
+        margin:30px auto;
+        border:2px solid #ccc;
+        border-radius:15px;
+    }
+    p {
+        width:80%;
+        padding:10px;
+        line-height: 2em;
+    }

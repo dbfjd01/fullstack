@@ -7,25 +7,31 @@
 </head>
 <body>
     <script>
-        let a = Number(prompt("html 점수입력"));
-        let b = Number(prompt("css 점수입력"));
-        let c = Number(prompt("javascript 점수입력"));
-        let avg = (a+b+c)/3;
-        let result;
-
-        if(avg >= 60){
-            if(a < 40){
-                document.write('html '+a+"점, "+b+"점, "+c+"점으로 "+"불합격");
-            }else if(b < 40){
-                document.write(a+"점, css"+b+"점, "+c+"점으로 "+"불합격");
-            }else if(c < 40){
-                document.write(a+"점, "+b+"점, javascript"+c+"점으로 "+"불합격");
-            } else{
-                document.write("합격");
-            }
-        } else{
-            document.write(a+"점, "+b+"점, "+c+"점으로 "+"불합격");
+     //html, css , javascript 시험을 보고
+     //prompt 로 입력 세과목받고
+     // 평균이 60이상이고 각과목 과락(40미만)이 없으면 합격입니다.
+     var html = Number(prompt("html점수입력 : ",""));
+     var css = Number(prompt("css점수입력 : ",""));
+     var javascript= Number(prompt("javascript점수입력 : ",""));
+     var avg = (html + css + javascript) / 3;
+     //document.write(avg);   
+     var comment;
+     if(avg >= 60){
+        if(html < 40){
+             comment = 'html ' + '40점 미만 불합격';
+        }else if(css < 40){
+             comment = 'css ' + '40점 미만 불합격';
+        }else if(javascript < 40){
+             comment = 'javascript ' + '40점 미만 불합격';
+        }else{
+             comment = '평균 ' + avg + "점 합격"
         }
+
+     }else{
+        comment = '평균 ' + avg + "점 불합격"
+     }   
+     document.write(comment);
+
     </script>
 </body>
 </html>
